@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pikobar - Pusat Informasi dan Koordinasi COVID-19 Jawa Barat</title>
+
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../dist/tailwind.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed left-0 top-0 w-screen shadow-md">
+
+        <!-- Notification -->
+        <div class="bg-yellow-400 flex items-center px-20 py-4 gap-3">
+            <p class="text-sm">Izinkan notifikasi mengirimkan pesan</p>
+            <button class="px-4 rounded py-1 text-sm font-semibold bg-blue-400 text-white">Allow</button>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="bg-white py-1">
+            <div class="flex px-20 items-center justify-between">
+                <!-- Brand -->
+                <div class="flex py-3 gap-4">
+                    <img src="./img/pikobar.jpg" alt="" class="w-10 h-10">
+                    <div>
+                        <h5 class="text-md font">Pusat Informasi & Koordinasi COVID-19</h5>
+                        <h6 class="text-sm text-gray-500">Provinsi Jawa Barat</h6>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <ul class="flex items-center gap-2 text-gray-400 text-sm font-bold">
+                    <li><a href="#" class="hover:bg-gray-100 px-3 py-3 text-green-500">Home</a></li>
+                    <li class="hover:bg-gray-100 group cursor-pointer">
+                        <span class="flex items-center block py-2 px-3">
+                            Data
+                            <svg id="Capa_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" xml:space="preserve" class="w-3 h-3 ml-2 fill-current" style="enable-background:new 0 0 256 256"><g><g><polygon points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093"></polygon></g></g></svg>
+                        </span>
+                        <ul class="absolute bg-white border hidden rounded-md group-hover:block">
+                            <li>
+                                <a href="#" class="hover:bg-gray-100 px-3 py-3 block">Statistik</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:bg-gray-100 px-3 py-3 block">Sebaran Kasus</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:bg-gray-100 px-3 py-3 block">Karakteristik Tempat Tidur</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:bg-gray-100 px-3 py-3 block">Peta Potensi dan Risiko Penularan</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="hover:bg-gray-100 px-3 py-3">Vaksinasi</a></li>
+                    <li><a href="#" class="hover:bg-gray-100 px-3 py-3">Isoman</a></li>
+                    <li><a href="#" class="hover:bg-gray-100 px-3 py-3">Cari Oksigen</a></li>
+                    <li><a href="#" class="hover:bg-gray-100 px-3 py-3">Donasi</a></li>
+                    <li class="hover:bg-gray-100 group cursor-pointer">
+                        <span class="flex items-center block py-2 px-3">
+                            Informasi
+                            <svg id="Capa_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" xml:space="preserve" class="w-3 h-3 ml-2 fill-current" style="enable-background:new 0 0 256 256"><g><g><polygon points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093"></polygon></g></g></svg>
+                        </span>
+                        <ul class="absolute bg-white border hidden rounded-md group-hover:block">
+                            <li><a href="#" class="hover:bg-gray-100 px-3 py-3 block">Berita</a></li>
+                            <li><a href="#" class="hover:bg-gray-100 px-3 py-3 block">FAQ</a></li>
+                            <li><a href="#" class="hover:bg-gray-100 px-3 py-3 block">Kontak</a></li>
+                            <li><a href="#" class="hover:bg-gray-100 px-3 py-3 block">Bantuan Sosial</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="rounded-full hover:bg-gray-100 mr-1 px-4 py-4 block">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a href="#" class="hover:bg-green-500 px-4 py-3 bg-green-600 rounded-md font-normal text-white">Download App</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="px-16 mt-40 mx-auto">
+        <div class="grid grid-cols-4 grid-rows-2 gap-6">
+            <div class="col-span-2 row-span-2 bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="./img/Vaksinasi Lansia (2).jpeg" alt="Vaksinasi Lansia">
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden box-border px-8 py-6 hover:bg-green-50 flex items-center">
+                <a href="#" class="block w-full">
+                    <h3 class="text-md">Call Center</h3>
+                    <p class="text-sm text-gray-700">Nomor Darurat</p>
+
+                    <div class="flex items-center text-green-600 gap-4 mt-6 font-extrabold">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <h2 class="text-xl font-bold">119</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden box-border px-8 py-6 hover:bg-green-50 flex items-center">
+                <a href="#" class="block w-full">
+                    <h3 class="text-md">Hotline Pikobar</h3>
+                    <p class="text-sm text-gray-700">Chat WA seputar COVID-19</p>
+
+                    <div class="flex items-center text-green-600 gap-4 mt-6 font-extrabold">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="whatsapp" class="h-8 w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
+                        </svg>
+                        <h2 class="text-xl font-bold">Klik untuk chat</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="col-span-2 bg-white shadow-md rounded-lg overflow-hidden box-border px-8 py-6 grid grid-cols-2 gap-6 items-center">
+                <div>
+                    <p class="text-md text-gray-800">Ikuti perkembangan terkini seputar Covid-19 dengan mengikuti kanal sosial media kami.</p>
+                </div>
+                <div class="flex gap-8 items-center ml-6 text-green-600 pl-4">
+                    <a href="#">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="w-10 h-10 hover:text-green-500" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="regular" enable-background="new 0 0 24 24" viewBox="0 0 24 24" class="w-10 h-10 hover:text-green-500"><g><path d="m.473 19.595c2.222 1.41 4.808 2.155 7.478 2.155 3.91 0 7.493-1.502 10.09-4.229 2.485-2.61 3.852-6.117 3.784-9.676.942-.806 2.05-2.345 2.05-3.845 0-.575-.624-.94-1.13-.647-.885.52-1.692.656-2.522.423-1.695-1.652-4.218-2-6.344-.854-1.858 1-2.891 2.83-2.798 4.83-3.139-.383-6.039-1.957-8.061-4.403-.332-.399-.962-.352-1.226.1-.974 1.668-.964 3.601-.117 5.162-.403.071-.652.41-.652.777 0 1.569.706 3.011 1.843 3.995-.212.204-.282.507-.192.777.5 1.502 1.632 2.676 3.047 3.264-1.539.735-3.241.98-4.756.794-.784-.106-1.171.948-.494 1.377zm7.683-1.914c.561-.431.263-1.329-.441-1.344-1.24-.026-2.369-.637-3.072-1.598.339-.022.69-.074 1.024-.164.761-.206.725-1.304-.048-1.459-1.403-.282-2.504-1.304-2.917-2.62.377.093.761.145 1.144.152.759.004 1.046-.969.427-1.376-1.395-.919-1.99-2.542-1.596-4.068 2.436 2.468 5.741 3.955 9.237 4.123.501.031.877-.44.767-.917-.475-2.059.675-3.502 1.91-4.167 1.222-.66 3.184-.866 4.688.712.447.471 1.955.489 2.722.31-.344.648-.873 1.263-1.368 1.609-.211.148-.332.394-.319.651.161 3.285-1.063 6.551-3.358 8.96-2.312 2.427-5.509 3.764-9.004 3.764-1.39 0-2.753-.226-4.041-.662 1.54-.298 3.003-.95 4.245-1.906z" data-original="#000000" class="active-path" data-old_color="#000000" fill="currentColor"/></g> </svg>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistic Header -->
+    <section class="px-16 my-8 mx-auto">
+        <h1 class="text-xl font-extrabold">Angka Kejadian di Jawa Barat</h1>
+        <h4 class="text-md text-gray-400">Update Terakhir: Selasa, 30 November 2021 13:30</h4>
+
+        <div class="block border-b-2 border-gray-200">
+            <button class="text-green-500 font-bold py-4 px-6 mt-2 border-b-4 border-green-500 hover:bg-gray-100">Statistik</button>
+        </div>
+    </section>
+
+    <!-- Statistic Content -->
+    <section class="px-16 mb-52 mx-auto">
+        <div class="grid grid-cols-12 grid-rows-5 gap-4">
+            <div class="col-span-3 row-span-2 bg-blue-900 rounded-md px-4 shadow-md py-5 text-center text-white">
+                <h3 class="text-gray-300 text-md font-semibold">TOTAL TERKONFIRMASI</h3>
+                <div class="grid grid-cols-2 mt-2">
+                    <div>
+                        <h4 class="font-bold text-sm mb-2">Jawa Barat</h4>
+                        <h3 class="text-3xl font-bold mb-1">707.728</h3>
+                        <div class="flex items-center gap-2 justify-center">
+                            <span class="p-1 bg-white rounded-full">
+                                <svg data-v-8464e9a6="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-3 h-3 text-blue-900">
+                                    <path data-v-8464e9a6="" fill="currentColor" d="M177 255.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 351.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 425.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1zm-34-192L7 199.7c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l96.4-96.4 96.4 96.4c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9l-136-136c-9.2-9.4-24.4-9.4-33.8 0z" class=""></path>
+                                </svg>
+                            </span> 29
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm mb-2">Indonesia</h4>
+                        <h3 class="text-3xl font-bold mb-1">4.256.112</h3>
+                        <div class="flex items-center gap-2 justify-center">
+                            <span class="p-1 bg-white rounded-full">
+                                <svg data-v-8464e9a6="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-3 h-3 text-blue-900">
+                                    <path data-v-8464e9a6="" fill="currentColor" d="M177 255.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 351.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 425.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1zm-34-192L7 199.7c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l96.4-96.4 96.4 96.4c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9l-136-136c-9.2-9.4-24.4-9.4-33.8 0z" class=""></path>
+                                </svg>
+                            </span> 29
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-3 row-span-2 bg-white rounded-md px-4 shadow-md py-5 text-center text-yellow-300">
+                <h3 class="text-gray-800 text-md font-semibold">ISOLASI/DALAM PERAWATAN</h3>
+                <div class="grid grid-cols-2 mt-2">
+                    <div>
+                        <h4 class="font-bold text-sm mb-2 text-black">Jawa Barat</h4>
+                        <h3 class="text-3xl font-bold mb-1">707.728</h3>
+                        <div class="flex items-center gap-2 justify-center">
+                            <span class="p-1 bg-yellow-400 rounded-full">
+                                <svg data-v-8464e9a6="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-3 h-3 text-white">
+                                    <path data-v-8464e9a6="" fill="currentColor" d="M177 255.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 351.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 425.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1zm-34-192L7 199.7c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l96.4-96.4 96.4 96.4c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9l-136-136c-9.2-9.4-24.4-9.4-33.8 0z" class=""></path>
+                                </svg>
+                            </span> 29
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm mb-2 text-black">Indonesia</h4>
+                        <h3 class="text-3xl font-bold mb-1">4.256.112</h3>
+                        <div class="flex items-center gap-2 justify-center">
+                            <span class="p-1 bg-yellow-400 rounded-full">
+                                <svg data-v-8464e9a6="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-3 h-3 text-white">
+                                    <path data-v-8464e9a6="" fill="currentColor" d="M177 255.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 351.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 425.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1zm-34-192L7 199.7c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l96.4-96.4 96.4 96.4c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9l-136-136c-9.2-9.4-24.4-9.4-33.8 0z" class=""></path>
+                                </svg>
+                            </span> 29
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-3 row-span-2 bg-white rounded-md px-4 shadow-md py-5 text-center text-green-500">
+                <h3 class="text-gray-800 text-md font-semibold">SELESAI ISOLASI/SEMBUH</h3>
+                <div class="grid grid-cols-2 mt-2">
+                    <div>
+                        <h4 class="font-bold text-sm mb-2 text-black">Jawa Barat</h4>
+                        <h3 class="text-3xl font-bold mb-1">707.728</h3>
+                        <div class="flex items-center gap-2 justify-center">
+                            <span class="p-1 bg-green-500 rounded-full">
+                                <svg data-v-8464e9a6="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-3 h-3 text-white">
+                                    <path data-v-8464e9a6="" fill="currentColor" d="M177 255.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 351.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 425.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1zm-34-192L7 199.7c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l96.4-96.4 96.4 96.4c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9l-136-136c-9.2-9.4-24.4-9.4-33.8 0z" class=""></path>
+                                </svg>
+                            </span> 29
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm mb-2 text-black">Indonesia</h4>
+                        <h3 class="text-3xl font-bold mb-1">4.256.112</h3>
+                        <div class="flex items-center gap-2 justify-center">
+                            <span class="p-1 bg-green-500 rounded-full">
+                                <svg data-v-8464e9a6="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-3 h-3 text-white">
+                                    <path data-v-8464e9a6="" fill="currentColor" d="M177 255.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 351.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 425.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1zm-34-192L7 199.7c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l96.4-96.4 96.4 96.4c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9l-136-136c-9.2-9.4-24.4-9.4-33.8 0z" class=""></path>
+                                </svg>
+                            </span> 29
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-3 row-span-2 bg-white rounded-md px-4 shadow-md py-5 text-center text-red-700">
+                <h3 class="text-gray-800 text-md font-semibold">MENINGGAL</h3>
+                <div class="grid grid-cols-2 mt-2">
+                    <div>
+                        <h4 class="font-bold text-sm mb-2 text-black">Jawa Barat</h4>
+                        <h3 class="text-3xl font-bold mb-1">707.728</h3>
+                        <div class="flex items-center gap-2 justify-center">
+                            <span class="p-1 bg-red-800 rounded-full">
+                                <svg data-v-8464e9a6="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-3 h-3 text-white">
+                                    <path data-v-8464e9a6="" fill="currentColor" d="M177 255.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 351.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 425.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1zm-34-192L7 199.7c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l96.4-96.4 96.4 96.4c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9l-136-136c-9.2-9.4-24.4-9.4-33.8 0z" class=""></path>
+                                </svg>
+                            </span> 29
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm mb-2 text-black">Indonesia</h4>
+                        <h3 class="text-3xl font-bold mb-1">4.256.112</h3>
+                        <div class="flex items-center gap-2 justify-center">
+                            <span class="p-1 bg-red-800 rounded-full">
+                                <svg data-v-8464e9a6="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-3 h-3 text-white">
+                                    <path data-v-8464e9a6="" fill="currentColor" d="M177 255.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 351.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 425.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1zm-34-192L7 199.7c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l96.4-96.4 96.4 96.4c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9l-136-136c-9.2-9.4-24.4-9.4-33.8 0z" class=""></path>
+                                </svg>
+                            </span> 29
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-4 row-span-3 bg-white rounded-md px-4 shadow-md border py-5 text-center text-black">
+                <h3 class="text-gray-800 text-md font-semibold">KONTAK ERAT</h3>
+                <h3 class="text-3xl font-bold mb-1 mt-3 text-gray-600">572.979</h3>
+                <h4 class="font-bold text-sm mb-2 text-gray-600">Total Kontak Erat</h4>
+                <div class="grid grid-cols-2 mt-5">
+                    <div>
+                        <div class="text-yellow-400 font-bold mb-1">
+                            <h3 class="text-2xl">27.728</h3>
+                            <p class="text-sm">(4.49%)</p>
+                        </div>
+                        <h4 class="font-bold text-sm mb-2 text-gray-700">Masih Dikarantina</h4>
+                    </div>
+                    <div>
+                        <div class="text-gray-500 font-bold mb-1">
+                            <h3 class="text-2xl">27.728</h3>
+                            <p class="text-sm">(4.49%)</p>
+                        </div>
+                        <h4 class="font-bold text-sm mb-2 text-gray-700">Discarded</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4 row-span-3 bg-white rounded-md px-4 shadow-md border py-5 text-center text-black">
+                <h3 class="text-gray-800 text-md font-semibold">SUSPEK</h3>
+                <h3 class="text-3xl font-bold mb-1 mt-3 text-gray-600">572.979</h3>
+                <h4 class="font-bold text-sm mb-2 text-gray-600">Total Kontak Erat</h4>
+                <div class="grid grid-cols-2 mt-5">
+                    <div>
+                        <div class="text-yellow-200 font-bold mb-1">
+                            <h3 class="text-2xl">216.886</h3>
+                            <p class="text-sm">(4.49%)</p>
+                        </div>
+                        <h4 class="font-bold text-sm mb-2 text-gray-700">Isolasi/Dalam Perawatan</h4>
+                    </div>
+                    <div>
+                        <div class="text-gray-500 font-bold mb-1">
+                            <h3 class="text-2xl">27.728</h3>
+                            <p class="text-sm">(4.49%)</p>
+                        </div>
+                        <h4 class="font-bold text-sm mb-2 text-gray-700">Discarded</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4 row-span-3 bg-white rounded-md px-4 shadow-md border py-5 text-center text-black">
+                <h3 class="text-gray-800 text-md font-semibold">PROBABLE</h3>
+                <h3 class="text-3xl font-bold mb-1 mt-3 text-gray-600">572.979</h3>
+                <h4 class="font-bold text-sm mb-2 text-gray-600">Total Kontak Erat</h4>
+                <div class="grid grid-cols-3 mt-5">
+                    <div>
+                        <div class="text-yellow-800 font-bold mb-1">
+                            <h3 class="text-2xl">27.728</h3>
+                            <p class="text-sm">(4.49%)</p>
+                        </div>
+                        <h4 class="font-bold text-sm mb-2 text-gray-700">Isolasi/Dalam Perawatan</h4>
+                    </div>
+                    <div>
+                        <div class="text-green-700 font-bold mb-1">
+                            <h3 class="text-2xl">27.728</h3>
+                            <p class="text-sm">(4.49%)</p>
+                        </div>
+                        <h4 class="font-bold text-sm mb-2 text-gray-700">Selesai Isolasi/Sembuh</h4>
+                    </div>
+                    <div>
+                        <div class="text-red-700 font-bold mb-1">
+                            <h3 class="text-2xl">27.728</h3>
+                            <p class="text-sm">(4.49%)</p>
+                        </div>
+                        <h4 class="font-bold text-sm mb-2 text-gray-700">Meninggal</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-20">
+            <h1>
+                <a href="#" class="text-green-600 text-xl flex items-center font-bold justify-center gap-2">
+                    Lihat Selengkapnya
+                    <svg data-v-176f7662="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-5 h-5">
+                        <path data-v-176f7662="" fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" class=""></path>
+                    </svg>
+                </a>
+            </h1>
+        </div>
+    </section>
+
+</body>
+
+</html>

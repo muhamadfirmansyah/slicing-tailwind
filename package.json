@@ -1,0 +1,16 @@
+{
+    "name": "slicing-tailwind-pikobar",
+    "version": "1.0.0",
+    "description": "Slicing Tailwind Pikobar",
+    "main": "index.js",
+    "author": "Muhamad Firmansyah",
+    "license": "MIT",
+    "dependencies": {
+        "autoprefixer": "^10.4.0",
+        "postcss": "^8.4.4",
+        "tailwindcss": "^2.2.19"
+    },
+    "scripts": {
+        "dev": "npx tailwindcss -i ./src/css/styles.css -o ./dist/tailwind.css"
+    }
+}
